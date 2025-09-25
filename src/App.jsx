@@ -71,7 +71,7 @@ const HoroscopoApp = () => {
     <div className="min-h-screen bg-black text-white p-8">
       <div className="max-w-6xl mx-auto space-y-12">
         <h1 className="text-5xl font-extrabold text-center text-yellow-500 tracking-wide mb-10">
-           Horóscopos Villafaña  Infante
+           Horóscopos Villafaña   
         </h1>       
         <div className="grid md:grid-cols-2 gap-8">      
           <div className="bg-zinc-900 border border-yellow-600 rounded-xl p-8 shadow-xl">
