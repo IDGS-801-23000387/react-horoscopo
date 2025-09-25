@@ -79,11 +79,19 @@ const HoroscopoApp = () => {
               Descubre tu Signo
             </h2>
             <div className="space-y-4">
-              <input type="text" placeholder="Tu nombre"  value={nombre} onChange={(e) => setNombre(e.target.value)} className="w-full px-4 py-3 rounded-lg bg-zinc-800 border border-yellow-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500" />                                           
               <input
-                type="date" value={fechaNacimiento} onChange={(e) => setFechaNacimiento(e.target.value)} className="w-full px-4 py-3 rounded-lg bg-zinc-800 border border-yellow-600 text-white focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                type="text"
+                placeholder="Tu nombre"
+                value={nombre}
+                onChange={(e) => setNombre(e.target.value)}
+                className="w-full px-2 py-2 bg-transparent border-b border-yellow-600 text-white placeholder-gray-400 focus:outline-none focus:border-yellow-400"
               />
-              <button onClick={manejarEnvio} className="w-full bg-gradient-to-r from-yellow-500 to-yellow-700 text-black font-bold py-3 rounded-lg shadow-md hover:from-yellow-400 hover:to-yellow-600 transition-all">
+
+           <input type="date" value={fechaNacimiento} onChange={(e) => setFechaNacimiento(e.target.value)} className="w-full px-2 py-2 bg-transparent border-b border-yellow-600 text-white focus:outline-none focus:border-yellow-400"/>
+              <button
+                onClick={manejarEnvio}
+                className="w-full bg-gradient-to-r from-yellow-500 to-yellow-700 text-black font-bold py-3 rounded-lg shadow-md hover:from-yellow-400 hover:to-yellow-600 transition-all"
+              >
                 Consultar Signo
               </button>
             </div>
